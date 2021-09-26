@@ -115,3 +115,20 @@ input {
   display: block;
   margin: auto;
 }
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    font-size: 1rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  input {
+    width: 70%;
+    height: 6vh;
+  }
+  .btn {
+    width: 30%;
+    height: 6vh;
+  }
+}
