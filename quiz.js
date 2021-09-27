@@ -2,7 +2,13 @@ const quizForm = document.querySelector(".quiz-form");
 const submitQuizBtn = document.querySelector("#btn-submit-quiz");
 const quizOutput = document.querySelector("#quiz-output");
 
-const correctAnswers = ["90°", "Right Angled"];
+const correctAnswers = [
+  "90°",
+  "Right Angled",
+  "3",
+  "Isosceles Triangle",
+  "Obtuse Angled Triangle",
+];
 
 function calculateScore(e) {
   e.preventDefault();
