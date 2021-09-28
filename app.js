@@ -16,6 +16,10 @@ function isTriangle() {
 
   if (sumOfAngles === 180) {
     output.innerText = "YaY! The angles form a triangle";
+  } else if (!sumOfAngles) {
+    output.innerText = "Please Input all the values";
+  } else if (sumOfAngles < 1) {
+    output.innerText = "Enter the positive value greater than zero";
   } else {
     output.innerText = "Sorry! The angles don't form a triangle";
   }

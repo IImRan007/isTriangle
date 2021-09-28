@@ -14,7 +14,13 @@ function calculateHypotenuse() {
   );
   const hypotenuseLength = Math.sqrt(sumOfSquares);
 
-  output.innerText = `The length of the hypotenuse is ${hypotenuseLength}`;
+  if (!sumOfSquares) {
+    output.innerText = "PLease input all the values";
+  } else {
+    output.innerText = `The length of the hypotenuse is ${hypotenuseLength.toFixed(
+      2
+    )}`;
+  }
 }
 
 checkHypotenuseBtn.addEventListener("click", calculateHypotenuse);

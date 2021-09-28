@@ -12,7 +12,12 @@ function calculateArea() {
     Number(areaInputs[0].value),
     Number(areaInputs[1].value)
   );
-  output.innerText = `Area is: ${area}cm²`;
+
+  if (!area) {
+    output.innerText = "Please input all the values";
+  } else {
+    output.innerText = `Area is: ${area}cm²`;
+  }
 }
 
 checkOutputBtn.addEventListener("click", calculateArea);
